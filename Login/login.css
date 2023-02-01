@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bungee&family=Nabla&family=Roboto:wght@300&family=Rubik+Mono+One&family=Staatliches&display=swap');
+
+body {
+    margin: 0;
+    background-color: white
+}
+
+.main-login  {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login > h3 > span {
+    color: rgb(250, 212, 42);
+}
+
+.left-login > h1 {
+    color: rgb(250, 212, 42);
+    margin: 0;
+}
+
+.illustration {
+    width: 60%;
+}
+
+.right-login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 245, 245);
+    padding: 30px 35px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.37);
+    border-radius:15px;
+}
+
+.card-login  h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 12pt;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.37);
+}
+
+.button-login {
+    width: 100%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(250, 212, 42, 0.562);
+    margin: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: rgb(250, 212, 42);
+}
+
+.button-login:hover {
+    background: rgba(245, 195, 40, 0.877);
+}
+
+.card-login > a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.left-login > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.left-login > h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    height: 20vh;
+    background: rgb(245, 245, 245);
+    font-family: 'Roboto', sans-serif;
+}
+.top-footer-login {
+    height: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: smaller;
+}
+
+.top-footer-left {
+    width: 80vw;
+    padding: 10px;
+}
+
+.top-footer-left > a {
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    padding: 10px;
+}
+
+.top-footer-right {
+    width: 20vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+
+.top-footer-right > button {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.151);
+    margin: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: rgb(245, 245, 245);
+    box-sizing: border-box;
+}
+
+.top-fotter-right > button:hover {
+    background: rgba(245, 195, 40, 0.877);
+}
+
+.login-links {
+    height: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: smaller;
+}
+
+.login-links > a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(150, 150, 150);
+}
+
+
+
+@media only screen  and (max-width: 950px) {
+    .main-login {
+        flex-direction: column;
+    }
+    .card-login {
+        width: 100%;
+    }
+    .left-login {
+        height: 30%;
+    }
+    .illustration {
+        display: none;
+    }
+}
+
+@media only screen  and (max-width: 580px) {
+    .top-footer-left {
+        width: 70vw;
+    }
+    .top-footer-right {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-height: 910px) {
+    .left-login > h3 {
+        display: none;
+    }
+    footer {
+        height: 20vh;
+    }
+    .card-login {
+        height: 80%;
+    }
+}
