@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana Co. | Login</title>
+    <title>Banana Co. | Log in or Register</title>
     <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="shortcut icon" href="banana.co logo.png">
 </head>
 <body>
     <div class="main-login">
         <div class="left-login">
             <h1>banana co.</h1>
             <h3>Connect with your little monkeys and the jungle around you on banana co.</h3>
-            <img class="illustration" src="connected-world-animate.svg" alt="social-media">
+            <img id="img" src="connected-world-animateMusa.svg" alt="social-media">
         </div>
         <div class="right-login">
             <div class="card-login">
-                <h1>Login</h1>
+                <h1>Log in</h1>
                 <div class="textfield">
                     <input id="input_email" type="text" placeholder="Email or phone number">
                 </div>
                 <div class="textfield">
                     <input id="input_senha" type="password" placeholder="Password">
                 </div>
-                <button class="button-login">Login</button>
-                <a href="">Forgot your password?</a>
+                <button class="button-login">Log in</button>
+                <a>Forgot your password?</a>
                 <button class="button-login">Create Account</button>
             </div>
         </div>
@@ -38,13 +39,20 @@
             <a href="login-en.html">English (US)</a>
         </div>
         <div class="top-footer-right">
-            <button>On/Off</button>
+            <div class="darkmode">
+                <label class="switch">
+                    <span class="switch-text">Dark Mode</span>
+                    <div class="switch-wrapper">
+                        <input type="checkbox" id="switch">
+                        <span class="switch-button"></span>
+                    </div>
+                </label>
+            </div>
         </div>
     </div>
-    <hr style="margin: 0;">
+    <hr class="footer-line">
     <div class="login-links">
-        <a href="">About us</a>
-        <a href="#">Contact</a>
     </div>
+    <script src="toggle-darkmode.js"></script>
 </footer>
 </html>
